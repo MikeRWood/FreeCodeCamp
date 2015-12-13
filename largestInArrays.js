@@ -1,4 +1,7 @@
-
++// Bonfire: Return Largest Numbers in Arrays
++// Author: @mikerwood
++// Challenge: http://www.freecodecamp.com/challenges/bonfire-return-largest-numbers-in-arrays
++// Learn to Code at Free Code Camp (www.freecodecamp.com)
 
 function largestOfFour(arr) {
   var results = [];
