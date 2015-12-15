@@ -1,0 +1,16 @@
+// Bonfire: Reverse a String
+// Author: @mikerwood
+// Challenge: http://www.freecodecamp.com/challenges/bonfire-reverse-a-string
+// Learn to Code at Free Code Camp (www.freecodecamp.com)
+//Reverse the provided string. You may need to turn the string into an array before you can reverse it. Your result must be a string.
+
+function reverseString(str) {
+  var strReverse = str.split('').reverse().join('');
+  return strReverse;
+}
+reverseString("Greetings from Earth");
+//htraE morf sgniteerG
+reverseString("hello");
+//olleh
+reverseString("Howdy");
+//ydwoH
