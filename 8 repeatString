@@ -2,6 +2,7 @@
 // Author: @mikerwood
 // Challenge: http://www.freecodecamp.com/challenges/bonfire-repeat-a-string-repeat-a-string
 // Learn to Code at Free Code Camp (www.freecodecamp.com)
+//Repeat a given string (first argument) n times (second argument). Return an empty string if n is a negative number.
 
 function repeat(str, num) {
   strNew = "";
