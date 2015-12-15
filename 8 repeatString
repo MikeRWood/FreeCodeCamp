@@ -10,7 +10,7 @@ function repeat(str, num) {
     strNew = "";
   } else {
     for (var i = 0; i < num; i++) {
-    strNew = strNew+str;
+    strNew += str;
     }
   }
   return strNew;
@@ -23,7 +23,7 @@ repeat("*", 3);
 repeat("abc", 4);
 //abcabcabcabc
 repeat("abc", 1);
-abc
+//abc
 repeat("*", 8);
 //********
 repeat("abc", -2);
