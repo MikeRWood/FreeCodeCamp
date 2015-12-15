@@ -1,0 +1,29 @@
+// Bonfire: Repeat a string repeat a string
+// Author: @mikerwood
+// Challenge: http://www.freecodecamp.com/challenges/bonfire-repeat-a-string-repeat-a-string
+// Learn to Code at Free Code Camp (www.freecodecamp.com)
+
+function repeat(str, num) {
+  strNew = "";
+  if(num<0){
+    strNew = "";
+  } else {
+    for (var i = 0; i < num; i++) {
+    strNew = strNew+str;
+    }
+  }
+  return strNew;
+}
+
+repeat("abc", 3);
+//abcabcabc
+repeat("*", 3);
+//***
+repeat("abc", 4);
+//abcabcabcabc
+repeat("abc", 1);
+abc
+repeat("*", 8);
+//********
+repeat("abc", -2);
+//""
