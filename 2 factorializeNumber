@@ -1,0 +1,21 @@
+// Bonfire: Factorialize a Number
+// Author: @mikerwood
+// Challenge: http://www.freecodecamp.com/challenges/bonfire-factorialize-a-number
+// Learn to Code at Free Code Camp (www.freecodecamp.com)
+//Return the factorial of the provided integer
+
+function factorialize(num) {
+  numFact = 1;
+  for (var i = 1; i<= num; i++) {
+    numFact *= i;
+  }
+  return numFact;
+}
+factorialize(5);
+//120
+factorialize(10);
+//3628800
+factorialize(20);
+//2432902008176640000
+factorialize(0);
+//1
