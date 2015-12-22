@@ -1,0 +1,16 @@
+// Bonfire: Falsy Bouncer
+// Author: @mikerwood
+// Challenge: http://www.freecodecamp.com/challenges/bonfire-falsy-bouncer
+// Learn to Code at Free Code Camp (www.freecodecamp.com)
+//   Remove all falsy values from an array.
+
+function bouncer(arr) {
+  arr = arr.filter(Boolean);
+  return arr;
+}
+bouncer([7, "ate", "", false, 9]);
+//[7, "ate", 9]
+bouncer(["a", "b", "c"]);
+//["a", "b", "c"]
+bouncer([false, null, 0, NaN, undefined, ""]);
+//[]
