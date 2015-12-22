@@ -1,0 +1,42 @@
+// Bonfire: Mutations
+// Author: @mikerwood
+// Challenge: http://www.freecodecamp.com/challenges/bonfire-mutations
+// Learn to Code at Free Code Camp (www.freecodecamp.com)
+//   Return true if the string in the first element of the array contains all
+//   of the letters of the string in the second element of the array
+
+function mutation(arr) {
+  var firstString = arr[0].toLowerCase().split('');
+  var secondString = arr[1].toLowerCase().split('');
+  for (i = 0; i < secondString.length; i++) {
+    if (firstString.indexOf(secondString[i]) < 0)
+      return false;
+  }
+  return true;
+}
+mutation(["hello", "hey"]);
+//false
+mutation(["hello", "Hello"]);
+//true
+mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"])
+//true
+mutation(["Mary", "Army"]);
+//true
+mutation(["Mary", "Aarmy"]);
+//true
+mutation(["Alien", "line"])
+//true
+mutation(["floor", "for"]);
+//true
+mutation(["hello", "neo"]);
+//false
+
+//ELEGANT ALTERNATIVE SOLUTION
+function mutation(arr) {
+  arr[0]=arr[0].toLowerCase();
+  arr[1]=arr[1].toLowerCase();
+  for(var x in arr[1]){
+    if(arr[0].indexOf(arr[1][x])<0) return false;
+  }
+  return true;
+}
